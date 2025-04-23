@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCF1FD"
+    tools:context=".MainActivity">
+
+    <!-- Logo OfficeTech (Imagen) -->
+
+    <!-- Tagline -->
+
+    <!-- Slogan -->
+
+    <!-- Mensaje principal -->
+
+    <!-- Contenedor para botones -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="390dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/happyman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your tech support."
+        android:textColor="#1D2997"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:letterSpacing="0.05"
+        android:text="solution starts here"
+        android:textColor="#F1D676"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagline" />
+
+    <TextView
+        android:id="@+id/mainMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="Empowering Businesses with Cutting-\nEdge Technical Support Solutions"
+        android:textAlignment="center"
+        android:textColor="#1F2224"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slogan" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:spacing="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainMessage">
+
+        <!-- Botón LOG IN -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="#2196F3"
+            android:text="LOG IN"
+            android:textAllCaps="false"
+            android:textColor="#7585C6"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:background="#DCF1FD"
+            android:backgroundTint="#4CAF50"
+            android:text="SIGN UP"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logappmovil" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
