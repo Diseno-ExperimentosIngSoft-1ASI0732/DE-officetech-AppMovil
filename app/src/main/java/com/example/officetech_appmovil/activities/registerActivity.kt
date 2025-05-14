@@ -127,14 +127,14 @@ class registerActivity:AppCompatActivity() {
         }
     }
 
-    private fun saveToken(token: String) {
+    public fun saveToken(token: String) {
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putString("USER_TOKEN", token)
         editor.apply()
     }
 
-    private fun saveUserId(userId: Long) {
+    public fun saveUserId(userId: Long) {
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putLong("USER_ID", userId)

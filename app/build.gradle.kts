@@ -47,8 +47,11 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.glide)
     implementation(libs.androidx.sqlite)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
+    testImplementation("io.mockk:mockk:1.13.10")
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.squareup.picasso:picasso:2.71828")
