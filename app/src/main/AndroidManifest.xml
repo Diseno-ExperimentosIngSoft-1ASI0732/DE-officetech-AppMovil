@@ -35,5 +35,6 @@
         <activity android:name=".activities.EditProfileActivity" />
         <activity android:name=".activities.ForumActivity" />
         <activity android:name=".activities.ServicesActivity" />
+        <activity android:name=".activities.TermsActivity" />
     </application>
 </manifest>
