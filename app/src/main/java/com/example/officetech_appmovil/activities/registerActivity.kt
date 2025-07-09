@@ -30,7 +30,7 @@ class registerActivity:AppCompatActivity() {
         setContentView(R.layout.register_app)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:8080/")
+            .baseUrl("https://de-officetech-backend.onrender.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

@@ -5,7 +5,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.gastrotrack_appmovil.R
 import com.example.officetech_appmovil.R
 
 class TermsActivity : AppCompatActivity() {
